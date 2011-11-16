@@ -3,6 +3,11 @@ import os
 
 class AndroidDebugBridge(object):
 
+    def __init__(self):
+        self.adb = "adb"
+        if not self.which(self.adb):
+            raise Exception("%s is not in your path")
+
     def which(self, program):
         """ tests if a script is present (like `which` on unix)
         code snippet from Jay on SO
