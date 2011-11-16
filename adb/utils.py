@@ -3,7 +3,7 @@ import os
 
 class AndroidDebugBridge(object):
 
-    def which(program):
+    def which(self, program):
         """ tests if a script is present (like `which` on unix)
         code snippet from Jay on SO
         http://stackoverflow.com/questions/377017/test-if-executable-exists-in-python/377028#377028
